@@ -2,19 +2,15 @@
 // NSCC Truro 2025
 // This work is licensed under CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-using System;
-using UnityEditor.Rendering;
+
 using UnityEngine;
-using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    GameManager gameManager => GameManager.Instance;
     BallManager ballManager => GameManager.Instance.BallManager;
     CameraManager cameraManager => GameManager.Instance.CameraManager;
     GameStateManager gameStateManager => GameManager.Instance.GameStateManager;
-    InputManager inputManager => GameManager.Instance.InputManager;
     UIManager uIManager => GameManager.Instance.UIManager;    
 
     private int nextScene;
