@@ -123,6 +123,11 @@ public class BallManager : MonoBehaviour
         {
             SetBallToStartPosition();
         }
+
+        if (other.gameObject.tag == "FakeGoalTrigger")
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 
     public void HandleAimGuide()
